@@ -1,31 +1,31 @@
 :root {
-    --bg: #fafafa; --fg: #1d1d1f; --muted: #6b7280;
-    --card: #ffffff; --border: #e5e73b; --accent: #2563eb; --error: #dc2626;
+  --bg: #fafafa; --fg: #1d1d1f; --muted: #6b7280;
+  --card: #ffffff; --border: #e5e7eb; --accent: #2563eb; --error: #dc2626;
 }
 @media (prefers-color-scheme: dark) {
-    :root {
-        --bg: #0f1115; --fg: #e8e8ea; --muted: #9aa0a6;
-        --card: #181b21; --border: #2a2f38; --accent: #60a5fa; --error: #f87171;
-    }
+  :root {
+    --bg: #0f1115; --fg: #e8e8ea; --muted: #9aa0a6;
+    --card: #181b21; --border: #2a2f38; --accent: #60a5fa; --error: #f87171;
+  }
 }
 
 * { box-sizing: border-box; }
 body {
-    margin: 0; background: var(--bg); color: var(--fg); line-height: 1.5;
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  margin: 0; background: var(--bg); color: var(--fg); line-height: 1.5;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 
 .site-header {
-    display: flex; flex-wrap: wrap; gap: 1rem; align-items: center;
-    justify-content: space-between; padding: 1rem 1.5rem;
-    background: var(--card); border-bottom: 1px solid var(--border);
+  display: flex; flex-wrap: wrap; gap: 1rem; align-items: center;
+  justify-content: space-between; padding: 1rem 1.5rem;
+  background: var(--card); border-bottom: 1px solid var(--border);
 }
 .site-header h1 { margin: 0; font-size: 1.25rem; }
 
 #search-form { display: flex; gap: .5rem; }
-#search-form input, #search_form button {
-    padding: .5rem .75rem; font: inherit; border-radius: 6px;
-    border: 1px solid var(--border); background: var(--bg); color: var(--fg);
+#search-form input, #search-form button {
+  padding: .5rem .75rem; font: inherit; border-radius: 6px;
+  border: 1px solid var(--border); background: var(--bg); color: var(--fg);
 }
 #search-form input { min-width: 15rem; text-transform: uppercase; }
 #search-form button { background: var(--accent); border-color: var(--accent); color: #fff; cursor: pointer; }
@@ -36,12 +36,12 @@ main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
 
 #summary h2 small { color: var(--muted); font-weight: 400; font-size: .9rem; }
 .stats-grid {
-    display: grid; gap: 1rem; margin: 1rem 0;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: grid; gap: 1rem; margin: 1rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 .stats-grid > div {
-    background: var(--card); border: 1px solid var(--border);
-    border-radius: 8px; padding: .75rem 1rem;
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 8px; padding: .75rem 1rem;
 }
 .stats-grid dt { color: var(--muted); font-size: .8rem; }
 .stats-grid dd { margin: 0; font-size: 1.1rem; font-weight: 600; }
